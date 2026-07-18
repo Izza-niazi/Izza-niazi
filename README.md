@@ -1,5 +1,9 @@
 <div align="center">
 
+<img src="./pixel-banner.svg" width="720" alt="IZZA NIAZI pixel banner" />
+
+<br><br>
+
 <img src="./typing-header.svg" alt="typing headline" width="720" />
 
 <br><br>
@@ -36,9 +40,6 @@
 <br><br>
 
 <h3><code>izza@github ~ $ ./arcade.sh</code></h3>
-<img src="./pixel-banner.svg" width="720" alt="IZZA NIAZI pixel banner" />
-
-<br>
 
 <!-- Interactive cartridges (GitHub renders <details> natively, no JS). -->
 <details>

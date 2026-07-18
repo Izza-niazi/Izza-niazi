@@ -27,9 +27,8 @@ jobs:
       # needed here; the portrait is regenerated locally when your photo changes.
       - run: pip install requests==2.32.3 beautifulsoup4==4.12.3
       - run: python scripts/fetch_contributions.py
-      - run: python scripts/render_heatmap_svg.py
       - run: python scripts/render_streak_svg.py
       - uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: "chore: refresh contribution graph [skip ci]"
-          file_pattern: "data/contributions.json contrib-heatmap.svg streak-stats.svg"
+          commit_message: "chore: refresh contribution stats [skip ci]"
+          file_pattern: "data/contributions.json streak-stats.svg"

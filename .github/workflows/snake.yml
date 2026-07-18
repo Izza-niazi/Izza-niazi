@@ -20,15 +20,17 @@ jobs:
     timeout-minutes: 5
     steps:
       # Renders your contribution graph as a snake game, output as SVGs.
+      # Uses your PAT (secrets.SNAKE_TOKEN) so the GraphQL query runs AS YOU and
+      # includes private contributions. Falls back to GITHUB_TOKEN (public only)
+      # if the secret isn't set.
       - name: Generate snake SVGs
         uses: Platane/snk@v3
         with:
           github_user_name: ${{ github.repository_owner }}
+          github_token: ${{ secrets.SNAKE_TOKEN || secrets.GITHUB_TOKEN }}
           outputs: |
             dist/github-snake.svg
             dist/github-snake-dark.svg?palette=github-dark
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       # Push the generated SVGs to a dedicated `output` branch (keeps main clean).
       # The README references them via the raw URL of that branch.

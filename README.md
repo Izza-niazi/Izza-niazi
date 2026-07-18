@@ -31,15 +31,7 @@
 <br><br>
 
 <h3><code>izza@github ~ $ cat stack.txt</code></h3>
-
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
-![React](https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB)
-![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=node.js&logoColor=white)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white)
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
-![AWS](https://img.shields.io/badge/AWS-232F3E?style=flat-square&logo=amazonwebservices&logoColor=white)
-![GitHub Actions](https://img.shields.io/badge/GitHub%20Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white)
+<img src="./stack.svg" width="860" alt="Tech stack" />
 
 <br>
 
@@ -58,6 +50,7 @@
     python scripts/prep_photo.py source-photo.jpg && python scripts/make_ascii_svg.py
     python scripts/make_info_card.py
     python scripts/make_typing_svg.py          # edit PHRASES in the script first
+    python scripts/make_stack_svg.py           # edit TECHS in the script first
 
   Daily automation (.github/workflows/update-profile-art.yml):
     python scripts/fetch_contributions.py      # scrape public calendar, no token

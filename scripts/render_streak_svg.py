@@ -3,13 +3,12 @@
 
 The popular "GitHub Streak Stats" widget, but generated from data you already
 fetch — no external service, no rate limits. Three panels: total contributions,
-current streak, longest streak, each with its date range. Refreshes daily with
-the heatmap.
+current streak, longest streak, each with its date range. Refreshes daily
+alongside the contribution data.
 
     python scripts/render_streak_svg.py     # writes streak-stats.svg
 """
 import json
-from datetime import date
 
 BG = "#0d1117"
 BORDER = "#30363d"
@@ -104,8 +103,8 @@ def main(src: str = "data/contributions.json", out: str = "streak-stats.svg") ->
         f'viewBox="0 0 {W} {H}" '
         f'font-family="\'Cascadia Code\',\'Segoe UI\',sans-serif">',
         f'<rect x="1" y="1" width="{W - 2}" height="{H - 2}" rx="10" fill="{BG}" stroke="{BORDER}"/>',
-        f'<circle cx="20" cy="20" r="5" fill="#ff5f56"/><circle cx="38" cy="20" r="5" fill="#ffbd2e"/>'
-        f'<circle cx="56" cy="20" r="5" fill="#27c93f"/>',
+        '<circle cx="20" cy="20" r="5" fill="#ff5f56"/><circle cx="38" cy="20" r="5" fill="#ffbd2e"/>'
+        '<circle cx="56" cy="20" r="5" fill="#27c93f"/>',
         f'<text x="{W/2:.0f}" y="24" text-anchor="middle" fill="{DIM}" font-size="12" '
         f'font-family="monospace">izza@github ~ $ ./streak.sh</text>',
         # dividers

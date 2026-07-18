@@ -78,9 +78,9 @@ def main(out: str = "info-card.svg") -> None:
         f'<rect x="1" y="1" width="{width - 2}" height="{height - 2}" rx="10" '
         f'fill="{BG}" stroke="{BORDER}"/>',
         # window dots
-        f'<circle cx="20" cy="20" r="5" fill="#ff5f56"/>'
-        f'<circle cx="38" cy="20" r="5" fill="#ffbd2e"/>'
-        f'<circle cx="56" cy="20" r="5" fill="#27c93f"/>',
+        '<circle cx="20" cy="20" r="5" fill="#ff5f56"/>'
+        '<circle cx="38" cy="20" r="5" fill="#ffbd2e"/>'
+        '<circle cx="56" cy="20" r="5" fill="#27c93f"/>',
     ]
 
     y = PAD + 34

@@ -15,8 +15,10 @@ token required for the daily refresh.
 | `make_stack_svg.py` | (edit `TECHS`) | `stack.svg` | Locally, when stack changes |
 | `make_pixel_svg.py` | (edit `TEXT`) | `pixel-banner.svg` | Locally, retro banner |
 | `fetch_contributions.py` | public GitHub HTML | `data/contributions.json` | Daily (Actions) |
-| `render_heatmap_svg.py` | `data/contributions.json` | `contrib-heatmap.svg` | Daily (Actions) |
 | `render_streak_svg.py` | `data/contributions.json` | `streak-stats.svg` | Daily (Actions) |
+
+The contribution graph itself is the **snake** — see `.github/workflows/snake.yml`,
+which renders it from your calendar and commits SVGs to the `output` branch.
 
 ## Local setup
 
@@ -32,13 +34,14 @@ python scripts/prep_photo.py source-photo.jpg
 python scripts/make_ascii_svg.py
 python scripts/make_info_card.py
 python scripts/make_typing_svg.py
+python scripts/make_stack_svg.py
+python scripts/make_pixel_svg.py
 ```
 
 ## Refresh the live data (also automated daily)
 
 ```bash
 python scripts/fetch_contributions.py
-python scripts/render_heatmap_svg.py
 python scripts/render_streak_svg.py
 ```
 

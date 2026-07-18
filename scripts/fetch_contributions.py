@@ -13,7 +13,6 @@ import json
 import re
 import sys
 from collections import defaultdict
-from datetime import date
 
 import requests
 from bs4 import BeautifulSoup

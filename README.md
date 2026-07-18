@@ -92,7 +92,6 @@
 
   The contribution graph itself is the snake (.github/workflows/snake.yml),
   which commits SVGs to the `output` branch twice a day.
-  (render_heatmap_svg.py is kept but unused — run it if you want the static grid back.)
 
   GitHub markdown gotchas: inline style="" is stripped (use <br> for spacing);
   <h1>/<h2> draw a full-width rule (use <h3>); no JS, no external CSS — all

@@ -33,6 +33,47 @@
 <h3><code>izza@github ~ $ cat stack.txt</code></h3>
 <img src="./stack.svg" width="860" alt="Tech stack" />
 
+<br><br>
+
+<h3><code>izza@github ~ $ ./arcade.sh</code></h3>
+<img src="./pixel-banner.svg" width="720" alt="IZZA NIAZI pixel banner" />
+
+<br>
+
+<!-- Interactive: click a cartridge to load it. GitHub renders <details> natively (no JS). -->
+<details>
+<summary>🕹️ &nbsp;<b>▸ PROJECTS</b>&nbsp; — press to load</summary>
+<br>
+<div align="left">
+<ul>
+<li>📱 <b>Quantum Edge Mobile</b> — cross-platform mobile app (React Native · Expo)</li>
+<li>🩺 <b>Telemedicine</b> — healthcare app for patient–doctor consults</li>
+<li>🦈 <b>SharkStack Website</b> — website build</li>
+<li>☕ <b>BeanMachine</b> — full-stack project</li>
+</ul>
+</div>
+</details>
+
+<details>
+<summary>🏆 &nbsp;<b>▸ HIGH SCORES</b>&nbsp; — achievements</summary>
+<br>
+<div align="left">
+<ul>
+<li>🧑‍💻 YOLO &nbsp;·&nbsp; 🚀 Quickdraw &nbsp;·&nbsp; 🦈 Pull Shark ×3</li>
+<li>🛠️ Full-stack builder — mobile and web</li>
+</ul>
+</div>
+</details>
+
+<details>
+<summary>💾 &nbsp;<b>▸ SECRET</b>&nbsp; — insert coin</summary>
+<br>
+<div align="left">
+Currently building <b>AI-powered apps</b>. Ask me about React Native, LLM tooling,
+or clean architecture. ☕
+</div>
+</details>
+
 <br>
 
 <h3><code>izza@github ~ $ ./connect.sh</code></h3>
@@ -51,6 +92,7 @@
     python scripts/make_info_card.py
     python scripts/make_typing_svg.py          # edit PHRASES in the script first
     python scripts/make_stack_svg.py           # edit TECHS in the script first
+    python scripts/make_pixel_svg.py           # retro pixel-art arcade banner
 
   Daily automation (.github/workflows/update-profile-art.yml):
     python scripts/fetch_contributions.py      # scrape public calendar, no token

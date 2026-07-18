@@ -20,15 +20,22 @@ from xml.sax.saxutils import escape
 HANDLE = "izza@github"
 TITLE = "izza-niazi"
 
+# Value can be a single string or a list of lines (rendered stacked).
 ROWS = [
-    ("Role",       "Software Engineer"),
-    ("Now",        "Building health-tech at Linear Health"),
-    ("Prev",       "Full-stack web · APIs · data pipelines"),
-    ("Stack",      "TypeScript · Python · React · Node · Postgres"),
-    ("Tools",      "Docker · GitHub Actions · AWS · Prisma"),
-    ("Focus",      "Clean architecture · DX · shipping fast"),
-    ("Learning",   "Distributed systems · LLM tooling"),
-    ("Highlights", "OSS contributor · mentor · terminal enjoyer"),
+    ("Role",       "Software Engineer · Mobile & Web"),
+    ("Now",        "Building AI-powered apps"),
+    ("Prev",       "Frontend · Mobile apps · APIs"),
+    ("Stack",      ["React Native · React",
+                    "TypeScript · JavaScript · Python"]),
+    ("Tools",      ["Git · GitHub Actions",
+                    "Supabase · Firebase · Expo"]),
+    ("Focus",      ["Mobile UX · Web apps",
+                    "AI tools · Clean architecture"]),
+    ("Learning",   ["System Design · LLMs",
+                    "Open-source development"]),
+    ("Highlights", ["Quantum Edge Mobile · Telemedicine",
+                    "SharkStack · BeanMachine",
+                    "Full-stack builder"]),
 ]
 # ---------------------------------------------------------------------------
 
@@ -60,7 +67,8 @@ def anim(delay: float) -> str:
 
 def main(out: str = "info-card.svg") -> None:
     header_lines = 2          # title bar + underline
-    height = PAD * 2 + (header_lines + len(ROWS)) * LINE_H + 8
+    total_value_lines = sum(len(v if isinstance(v, list) else [v]) for _, v in ROWS)
+    height = PAD * 2 + (header_lines * LINE_H) + (total_value_lines * LINE_H) + 8
     width = 620
 
     p = [
@@ -94,13 +102,21 @@ def main(out: str = "info-card.svg") -> None:
 
     for i, (label, value) in enumerate(ROWS):
         delay = 0.28 + i * 0.11
-        p.append(
-            f'<g{op}>{anim(delay)}'
-            f'<text x="{PAD}" y="{y}" fill="{KEY}" font-weight="bold">{escape(label)}</text>'
-            f'<text x="{PAD + KEY_W}" y="{y}" fill="{DIM}">:</text>'
-            f'<text x="{PAD + KEY_W + 14}" y="{y}" fill="{VALUE}">{escape(value)}</text>'
-            f'</g>'
-        )
+        lines = value if isinstance(value, list) else [value]
+        vx = PAD + KEY_W + 14
+        # label + colon + first value line
+        row = [
+            f'<g{op}>{anim(delay)}',
+            f'<text x="{PAD}" y="{y}" fill="{KEY}" font-weight="bold">{escape(label)}</text>',
+            f'<text x="{PAD + KEY_W}" y="{y}" fill="{DIM}">:</text>',
+            f'<text x="{vx}" y="{y}" fill="{VALUE}">{escape(lines[0])}</text>',
+        ]
+        # any additional value lines, stacked under the value column
+        for extra in lines[1:]:
+            y += LINE_H
+            row.append(f'<text x="{vx}" y="{y}" fill="{VALUE}">{escape(extra)}</text>')
+        row.append('</g>')
+        p.append("".join(row))
         y += LINE_H
 
     p.append("</svg>")

@@ -1,0 +1,10 @@
+# Needed by the daily workflow (lightweight):
+requests==2.32.3
+beautifulsoup4==4.12.3
+
+# Portrait-only — used locally when you change your photo.
+# The daily GitHub Action does NOT install these.
+pillow
+numpy
+opencv-python
+rembg

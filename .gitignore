@@ -1,0 +1,8 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+
+# Portrait source + intermediates (the generated avi-ascii.svg IS committed)
+source-photo.*
+source-prepped.png

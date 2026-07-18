@@ -1,13 +1,13 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="720" height="60" viewBox="0 0 720 60" font-family="'Cascadia Code','Courier New',monospace" font-size="30">
-<rect width="720" height="60" fill="#0d1117"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="684" height="60" viewBox="0 0 684 60" font-family="'Cascadia Code','Courier New',monospace" font-size="30">
+<rect width="684" height="60" fill="#0d1117"/>
 <text x="10" y="40" fill="#58a6ff" font-weight="bold" xml:space="preserve">$ </text>
-<clipPath id="tclip0"><rect x="46.0" y="0" height="60" width="0"><animate attributeName="width" dur="21.025s" repeatCount="indefinite" calcMode="linear" keyTimes="0.0000;0.0606;0.1367;0.1691;1.0000" values="0.0;306.0;306.0;0.0;0.0"/></rect></clipPath>
-<text x="46.0" y="40" fill="#39d353" clip-path="url(#tclip0)" xml:space="preserve">Software Engineer</text>
-<clipPath id="tclip3905"><rect x="46.0" y="0" height="60" width="0"><animate attributeName="width" dur="21.025s" repeatCount="indefinite" calcMode="linear" keyTimes="0.0000;0.1857;0.3106;0.3867;0.4533;1.0000" values="0.0;0.0;630.0;630.0;0.0;0.0"/></rect></clipPath>
-<text x="46.0" y="40" fill="#39d353" clip-path="url(#tclip3905)" xml:space="preserve">Health-tech builder @ Linear Health</text>
-<clipPath id="tclip9879"><rect x="46.0" y="0" height="60" width="0"><animate attributeName="width" dur="21.025s" repeatCount="indefinite" calcMode="linear" keyTimes="0.0000;0.4699;0.5912;0.6673;0.7320;1.0000" values="0.0;0.0;612.0;612.0;0.0;0.0"/></rect></clipPath>
-<text x="46.0" y="40" fill="#39d353" clip-path="url(#tclip9879)" xml:space="preserve">TypeScript · Python · React · Node</text>
-<clipPath id="tclip15739"><rect x="46.0" y="0" height="60" width="0"><animate attributeName="width" dur="21.025s" repeatCount="indefinite" calcMode="linear" keyTimes="0.0000;0.7486;0.8521;0.9282;0.9834;1.0000" values="0.0;0.0;522.0;522.0;0.0;0.0"/></rect></clipPath>
-<text x="46.0" y="40" fill="#39d353" clip-path="url(#tclip15739)" xml:space="preserve">Terminal enjoyer. Ships fast.</text>
+<clipPath id="tclip0"><rect x="46.0" y="0" height="60" width="0"><animate attributeName="width" dur="21.600s" repeatCount="indefinite" calcMode="linear" keyTimes="0.0000;0.1111;0.1852;0.2444;1.0000" values="0.0;576.0;576.0;0.0;0.0"/></rect></clipPath>
+<text x="46.0" y="40" fill="#39d353" clip-path="url(#tclip0)" xml:space="preserve">Software Engineer · Mobile &amp; Web</text>
+<clipPath id="tclip5630"><rect x="46.0" y="0" height="60" width="0"><animate attributeName="width" dur="21.600s" repeatCount="indefinite" calcMode="linear" keyTimes="0.0000;0.2606;0.3440;0.4181;0.4625;1.0000" values="0.0;0.0;432.0;432.0;0.0;0.0"/></rect></clipPath>
+<text x="46.0" y="40" fill="#39d353" clip-path="url(#tclip5630)" xml:space="preserve">Building AI-powered apps</text>
+<clipPath id="tclip10340"><rect x="46.0" y="0" height="60" width="0"><animate attributeName="width" dur="21.600s" repeatCount="indefinite" calcMode="linear" keyTimes="0.0000;0.4787;0.5933;0.6674;0.7285;1.0000" values="0.0;0.0;594.0;594.0;0.0;0.0"/></rect></clipPath>
+<text x="46.0" y="40" fill="#39d353" clip-path="url(#tclip10340)" xml:space="preserve">React Native · React · TypeScript</text>
+<clipPath id="tclip16085"><rect x="46.0" y="0" height="60" width="0"><animate attributeName="width" dur="21.600s" repeatCount="indefinite" calcMode="linear" keyTimes="0.0000;0.7447;0.8523;0.9264;0.9838;1.0000" values="0.0;0.0;558.0;558.0;0.0;0.0"/></rect></clipPath>
+<text x="46.0" y="40" fill="#39d353" clip-path="url(#tclip16085)" xml:space="preserve">Full-stack builder · ships fast</text>
 <rect x="48.0" y="16" width="10.8" height="30" fill="#39d353"><animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.5;0.5;1" dur="1s" repeatCount="indefinite"/></rect>
 </svg>

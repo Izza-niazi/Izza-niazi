@@ -12,10 +12,10 @@ Edit PHRASES below.
 from xml.sax.saxutils import escape
 
 PHRASES = [
-    "Software Engineer",
-    "Health-tech builder @ Linear Health",
-    "TypeScript · Python · React · Node",
-    "Terminal enjoyer. Ships fast.",
+    "Software Engineer · Mobile & Web",
+    "Building AI-powered apps",
+    "React Native · React · TypeScript",
+    "Full-stack builder · ships fast",
 ]
 
 FONT = 30

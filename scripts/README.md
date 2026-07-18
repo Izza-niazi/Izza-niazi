@@ -12,6 +12,9 @@ token required for the daily refresh.
 | `make_ascii_svg.py` | `source-prepped.png` | `avi-ascii.svg` | Locally, after `prep_photo.py` |
 | `make_info_card.py` | (edit script) | `info-card.svg` | Locally, when details change |
 | `make_typing_svg.py` | (edit `PHRASES`) | `typing-header.svg` | Locally, when phrases change |
+| `make_stack_svg.py` | (edit `TECHS`) | `stack.svg` | Locally, when stack changes |
+| `make_pixel_svg.py` | (edit `TEXT`) | `pixel-banner.svg` | Locally, retro banner |
+| `make_terminal_quest.py` | (edit `STORY`) | injects into `README.md` | Locally, choose-your-path game |
 | `fetch_contributions.py` | public GitHub HTML | `data/contributions.json` | Daily (Actions) |
 | `render_heatmap_svg.py` | `data/contributions.json` | `contrib-heatmap.svg` | Daily (Actions) |
 | `render_streak_svg.py` | `data/contributions.json` | `streak-stats.svg` | Daily (Actions) |

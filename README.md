@@ -40,7 +40,54 @@
 
 <br>
 
-<!-- Interactive: click a cartridge to load it. GitHub renders <details> natively (no JS). -->
+<b>🎮 TERMINAL QUEST</b> — a choose-your-path game. <b>Click a choice to play.</b><br>
+<sub>prod is down at 2AM… can you fix it and keep your HP? (no JS — pure clickable README)</sub>
+
+<div align="left">
+<!-- QUEST:START -->
+<pre>╔════════════════════╗
+║  PROD  ●  OFFLINE  ║
+║  pager:  RINGING   ║
+╚════════════════════╝</pre><p>🌙 2:04 AM. PagerDuty is screaming. Production is DOWN. You open your laptop, one eye still asleep.</p><p><code>HP [██████████] 100  ·  SCORE 0</code></p><details><summary>🔍 tail the logs</summary><pre> ▄▄      ▄▄
+▐░░▌    ▐░░▌
+ ▜██████████▛
+    ▀ BUG ▀</pre><p>The logs scroll past... there it is: a null pointer in the payments service. Classic.</p><p><code>HP [██████████] 100  ·  SCORE 20</code></p><details><summary>🩹 write a hotfix yourself</summary><p>Hotfix ready. Your cursor hovers over the deploy button.</p><p><code>HP [██████████] 100  ·  SCORE 30</code></p><details><summary>✅ run the test suite first</summary><pre>    ___________
+   |  WIN!!!  |
+   |___   ___|
+       |_|_|</pre><p>Green across the board. You deploy. Prod recovers. You go back to bed a legend.</p><p><code>HP [██████████] 100  ·  SCORE 80</code></p><p><b>◆ YOU WIN ◆</b> — final score <b>80</b>. <i>▸ scroll up and pick a different path to play again</i></p></details><details><summary>🚀 YOLO deploy, no tests</summary><pre>  .----------.
+  | ✕      ✕ |
+  |    ▁▁    |
+  |  \____/  |
+  '----------'</pre><p>The hotfix had a typo. Prod is now double-down and the whole team is very awake.</p><p><code>HP [███░░░░░░░]  30  ·  SCORE 0</code></p><p><b>▚ GAME OVER ▚</b> — final score <b>0</b>. <i>▸ scroll up and pick a different path to play again</i></p></details></details><details><summary>📣 wake the on-call team</summary><pre> o   o   o
+/|\ /|\ /|\
+/ \ / \ / \
+ one screen, three devs</pre><p>The team rallies — three sleepy engineers, one shared screen.</p><p><code>HP [██████████] 100  ·  SCORE 35</code></p><details><summary>🤝 pair on the fix</summary><pre>    ___________
+   |  WIN!!!  |
+   |___   ___|
+       |_|_|</pre><p>Pair Extraordinaire! You squash the bug together and ship. Donuts in the morning. 🍩</p><p><code>HP [██████████] 100  ·  SCORE 75</code></p><p><b>◆ YOU WIN ◆</b> — final score <b>75</b>. <i>▸ scroll up and pick a different path to play again</i></p></details><details><summary>😤 argue about whose fault it is</summary><pre>  .----------.
+  | ✕      ✕ |
+  |    ▁▁    |
+  |  \____/  |
+  '----------'</pre><p>45 minutes of finger-pointing later, prod is still down and morale is lower.</p><p><code>HP [█████░░░░░]  50  ·  SCORE 35</code></p><p><b>▚ GAME OVER ▚</b> — final score <b>35</b>. <i>▸ scroll up and pick a different path to play again</i></p></details></details></details><details><summary>⏪ roll back the last deploy</summary><pre> [====&gt; 100% ]
+  prod restored
+  ☕ back to bed</pre><p>Rollback initiated... prod stabilizes. Breathing room at last.</p><p><code>HP [██████████] 100  ·  SCORE 25</code></p><details><summary>📝 write the blameless postmortem</summary><pre>    ___________
+   |  WIN!!!  |
+   |___   ___|
+       |_|_|</pre><p>Postmortem filed, root cause fixed for good. You leveled up. 📈</p><p><code>HP [██████████] 100  ·  SCORE 70</code></p><p><b>◆ YOU WIN ◆</b> — final score <b>70</b>. <i>▸ scroll up and pick a different path to play again</i></p></details><details><summary>🙈 pretend it never happened</summary><pre>  .----------.
+  | ✕      ✕ |
+  |    ▁▁    |
+  |  \____/  |
+  '----------'</pre><p>The bug returns next week. And the week after. Tech-Debt Boss unlocked.</p><p><code>HP [██████░░░░]  60  ·  SCORE 25</code></p><p><b>▚ GAME OVER ▚</b> — final score <b>25</b>. <i>▸ scroll up and pick a different path to play again</i></p></details></details><details><summary>😴 silence the pager, go back to bed</summary><pre>  .----------.
+  | ✕      ✕ |
+  |    ▁▁    |
+  |  \____/  |
+  '----------'</pre><p>You wake to 200 Slack messages and a very calm calendar invite titled 'quick chat'.</p><p><code>HP [░░░░░░░░░░]   0  ·  SCORE 0</code></p><p><b>▚ GAME OVER ▚</b> — final score <b>0</b>. <i>▸ scroll up and pick a different path to play again</i></p></details>
+<!-- QUEST:END -->
+</div>
+
+<br>
+
+<!-- Interactive cartridges (GitHub renders <details> natively, no JS). -->
 <details>
 <summary>🕹️ &nbsp;<b>▸ PROJECTS</b>&nbsp; — press to load</summary>
 <br>
@@ -65,15 +112,6 @@
 </div>
 </details>
 
-<details>
-<summary>💾 &nbsp;<b>▸ SECRET</b>&nbsp; — insert coin</summary>
-<br>
-<div align="left">
-Currently building <b>AI-powered apps</b>. Ask me about React Native, LLM tooling,
-or clean architecture. ☕
-</div>
-</details>
-
 <br>
 
 <h3><code>izza@github ~ $ ./connect.sh</code></h3>
@@ -93,6 +131,7 @@ or clean architecture. ☕
     python scripts/make_typing_svg.py          # edit PHRASES in the script first
     python scripts/make_stack_svg.py           # edit TECHS in the script first
     python scripts/make_pixel_svg.py           # retro pixel-art arcade banner
+    python scripts/make_terminal_quest.py      # inject the choose-your-path game (edit STORY)
 
   Daily automation (.github/workflows/update-profile-art.yml):
     python scripts/fetch_contributions.py      # scrape public calendar, no token

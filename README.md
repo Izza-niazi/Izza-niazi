@@ -42,15 +42,18 @@
 <h3><code>izza@github ~ $ ./arcade.sh</code></h3>
 
 <!-- Interactive cartridges (GitHub renders <details> natively, no JS). -->
-<details>
+<details open>
 <summary>🕹️ &nbsp;<b>▸ PROJECTS</b>&nbsp; — press to load</summary>
 <br>
 <div align="left">
 <ul>
 <li>📱 <b>Quantum Edge Mobile</b> — cross-platform mobile app (React Native · Expo)</li>
 <li>🩺 <b>Telemedicine</b> — healthcare app for patient–doctor consults</li>
-<li>🦈 <b>SharkStack Website</b> — website build</li>
-<li>☕ <b>BeanMachine</b> — full-stack project</li>
+<li>🦈 <a href="https://sharkstack.dev"><b>SharkStack Website</b></a> — company site for a software studio, with services, portfolio, pricing, careers, an AI training page and an AI chatbot (React · Vite · Tailwind CSS · GSAP · Three.js)</li>
+<li>☕ <a href="https://bean-machine-tau.vercel.app"><b>BeanMachine</b></a> — interactive pixel-art coffee shop with animated scenes, an order flow, sound effects and light/dark mode (React · Redux Toolkit · Tailwind CSS)</li>
+<li>📄 <a href="https://play.google.com/store/apps/details?id=com.pdfreadermobileapp"><b>AI PDF Scanner</b></a> — Android document scanner and viewer for PDF, Word, Excel and PowerPoint files, with PDF tools like merge and split, plus AI summaries and chat with your documents (React Native · TypeScript · Redux Toolkit · Firebase)</li>
+<li>🔳 <a href="https://play.google.com/store/apps/details?id=com.qrmobileapp"><b>QR Scanner &amp; Barcode Scanner</b></a> — offline-first Android app for scanning codes from the camera or gallery, and creating custom QR codes with your own colors and logo (React Native · TypeScript · ML Kit)</li>
+<li>🌐 <b>AI Translator</b> — Android translator for text, voice and images across 59 languages, with on-device translation for downloaded languages (React Native · TypeScript · ML Kit · SQLite)</li>
 </ul>
 </div>
 </details>
